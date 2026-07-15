@@ -1,0 +1,243 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: background var(--transition-base);
+}
+
+.googleBg {
+  background-color: #f0f4f9;
+}
+
+.facebookBg {
+  background-color: #ebedf0;
+}
+
+.appleBg {
+  background-color: #1a1a1a;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.appleBg .card {
+  background: #2c2c2c;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.logoWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1f1f1f;
+}
+
+.appleBg .header h1 {
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #5f6368;
+  margin: 0;
+}
+
+.appleBg .header p {
+  color: #a1a1a1;
+}
+
+.header strong {
+  color: #3c4043;
+}
+
+.appleBg .header strong {
+  color: #ffffff;
+}
+
+/* Accounts List */
+.accountsList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.appleBg .accountsList {
+  border-color: #444444;
+}
+
+.accountItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dadce0;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 150ms ease;
+  box-sizing: border-box;
+}
+
+.appleBg .accountItem {
+  border-bottom-color: #444444;
+}
+
+.accountItem:last-child {
+  border-bottom: none;
+}
+
+.accountItem:hover {
+  background-color: #f7f8f9;
+}
+
+.appleBg .accountItem:hover {
+  background-color: #383838;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #7a9e7e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.useAnother .avatar {
+  background-color: #f1f3f4;
+  color: #5f6368;
+}
+
+.appleBg .useAnother .avatar {
+  background-color: #444444;
+  color: #a1a1a1;
+}
+
+.accountInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3c4043;
+}
+
+.appleBg .accountName {
+  color: #ffffff;
+}
+
+.accountEmail {
+  font-size: 0.78rem;
+  color: #5f6368;
+}
+
+.appleBg .accountEmail {
+  color: #a1a1a1;
+}
+
+.useAnother .accountName {
+  color: #1a73e8;
+  font-weight: 500;
+}
+
+.appleBg .useAnother .accountName {
+  color: #2997ff;
+}
+
+/* Loading Area */
+.loadingArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 16px;
+  text-align: center;
+}
+
+.loadingArea p {
+  font-size: 0.9rem;
+  color: #5f6368;
+}
+
+.appleBg .loadingArea p {
+  color: #a1a1a1;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #1a73e8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.appleBg .spinner {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-top-color: #ffffff;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #757575;
+  padding-top: 12px;
+  border-top: 1px solid #f1f3f4;
+}
+
+.appleBg .footer {
+  border-top-color: #444444;
+  color: #888888;
+}
+
+.footer span {
+  cursor: pointer;
+}
+
+.footer span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--color-cream);
+  border: var(--border-input);
+  border-radius: var(--radius-md);
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-warm-brown);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.socialBtn:hover {
+  background: var(--color-sand-dark);
+  border-color: rgba(92, 64, 51, 0.25);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.socialBtn:active {
+  transform: scale(0.98);
+}
+
+.socialBtn svg {
+  flex-shrink: 0;
+}
+
+.socialBtn span {
+  white-space: nowrap;
+}
